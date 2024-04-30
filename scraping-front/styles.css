@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+:root {
+    --primary: oklch(85.11% 0.133 96.73);
+    --secondary: oklch(65.47% 0.163 11.9);
+    --background: oklch(18.22% 0 0);
+    --text: oklch(100% 0 0);
+    --border_header: oklch(30% 0 0);
+    --background_input: oklch(26.22% 0 0);
+}
+
+body {
+    font-family: 'Martian Mono', monospace;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border_header);
+    box-shadow: 0 1px 1px var(--border_header);
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+input {
+    background-color: var(--background_input);
+    color: var(--text);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px 0;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: oklch(75% 0.14 97);
+}
+
+main {
+    margin: auto;
+    width: 60%;
+}
+
+.results-container {
+    text-align: center;
+}
+
+.card {
+    background-color: var(--background_input);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    transition: border-color 0.3s;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card > div {
+    margin-left: 20px;
+    text-align: start;
+}
+
+.btn-add-to-cart {
+    background-color: oklch(67.3% 0.17 145);
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-add-to-cart:hover {
+    background-color: oklch(60% 0.17 145); 
+}
+
+#btnSearch {
+    background-color: var(--primary);
+    border: none;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnSearch:hover {
+    background-color: oklch(75% 0.14 97);
+}
+
+#btnSearch i {
+    color: white;
+}
