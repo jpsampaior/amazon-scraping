@@ -47,6 +47,7 @@ input {
     border-radius: 5px;
     padding: 8px 12px;
     margin: 5px 0;
+    width: 200px;
     transition: border-color 0.3s;
 }
 
@@ -83,6 +84,15 @@ main {
 .card > div {
     margin-left: 20px;
     text-align: start;
+}
+
+.rating > * {
+    color: var(--primary);
+}
+
+.rating-amount {
+    color: oklch(70% 0 0);
+    font-size: 0.8em;
 }
 
 .btn-add-to-cart {
