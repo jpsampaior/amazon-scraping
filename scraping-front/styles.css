@@ -40,6 +40,10 @@ h1 {
     color: var(--primary);
 }
 
+h3 {
+    margin-top: 0;
+}
+
 input {
     background-color: var(--background_input);
     color: var(--text);
@@ -72,6 +76,7 @@ main {
     margin-bottom: 15px;
     padding: 10px;
     display: flex;
+    align-items: center;
     transition: border-color 0.3s;
 }
 
@@ -85,6 +90,21 @@ main {
     margin-left: 20px;
     text-align: start;
 }
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating > div {
+    display: flex;
+    align-items: center;
+}
+
+.rating i {
+    margin-left: 3px;
+}
+
 
 .rating > * {
     color: var(--primary);
