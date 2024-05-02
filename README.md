@@ -30,7 +30,7 @@ The frontend is built with HTML, CSS, and pure JavaScript and consumes the API p
 2. Clone this repository:
 
 ```bash
-node backend.js
+node scrapper.js
 ```
 
 - The backend will run on port 3001 by default. If port 3001 is already in use, you can change the port by setting the PORT environment variable.
